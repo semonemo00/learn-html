@@ -1,0 +1,40 @@
+div {
+  background-color: blue;
+  color: white;
+}
+
+#text-red {
+  color: red;
+}
+li.text-large {
+  font-size: 60px;
+}
+
+/* 결합 선택자 */
+div img {
+  width: 400px;
+}
+
+div  > a {
+  color: white;
+}
+
+div p + a {
+  background-color: pink;
+}
+
+div p ~ a {
+  background-color: pink;
+}
+
+/* 가상 선택자 */
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+}
+.btn:hover {
+  background-color: blue;
+  border-radius: 12px;
+  cursor: pointer;
+}

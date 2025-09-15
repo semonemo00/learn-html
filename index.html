@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김진아의 개인페이지</title>
+    <!-- 외부스타일 시트 -->
+     <link rel="stylesheet" href="styles.css">
+
+    <!-- 내부스타일 시트 -->
+     <style>
+      strong {
+        background-color: aqua;
+
+      }
+     </style>
   </head>
   <br>
     Hello World
+    <button type="button" class="btn">버튼</button>
     <p>p태그입니다</p>
-    <strong>strong태그입니다</strong>
+    <strong id="text-red">strong태그입니다</strong>
     <br/>
     <strong>strong태그입니다</strong>
     <div style="border: 1px solid red;">
@@ -19,9 +30,10 @@
         </div>
         </br>
         <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTA2MjNfMjg2%2FMDAxNzUwNjU3MzUyMTc2.jM4hJcVeaWLqYhN4Z4c3fXjwQJ3FOQL8gsfp877YWYgg.t9mQv6XnKoOdQgDrFTpsxoUkV85-g2VuMD9PkLNodbog.GIF%2F11.gif&type=sc960_832_gif"
-        alt="더피 이미지" with="200">
+        alt="더피 이미지">
       </p>
       <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+      <span><a href=""> 형제 태그입니다</a></span>
     </div>
     <!-- 제목태그 -->
      <h1>
@@ -38,9 +50,9 @@
      <h3>우리 강의에서 다루는 언어</h3>  
      <!-- 순서가 없는 리스트:ul -->
      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Jvascript</li>
+        <li class="text-large">HTML</li>
+        <li class="text-large">CSS</li>
+        <li class="text-large">Javascript</li>
        </ul>
        <!-- 순서가 있는 리스트:ol -->
        <ol>
@@ -49,7 +61,7 @@
        </ol>
        <!-- Form 요소들 -->
        <form action="">
-        <label for="user-id">ID : </label>
+        <label for="user-id" class="text-large">ID : </label>
         <br>
         <input 
           type="text" 
